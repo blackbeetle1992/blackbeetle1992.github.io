@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: Jiangxh
+email: jxh1992@connect.hku.hk
+description: I'm a Game Development Lover, graduated from Nanjing Tech University, with bachelor degree of Computer Science and Technology. Now I'm studing in The University of HongKong to persue my master degree of Computer Science(Multimedia Stream) and will gradute in Dec. 2017.
 url: # the base hostname & protocol for your site
 
 
@@ -34,11 +34,11 @@ kramdown:
 #
 owner:
   name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
-  disqus-shortname:
+  avatar: avartar.png
+  job: "Game Developer"
+  bio: "Jiangxh's home page, blog theme powered by jekyll."
+  email: jxh1992@connect.hku.hk
+  disqus-shortname: Jiangxh
   twitter: #username
   facebook: #username
   google:
@@ -48,8 +48,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  gitlab: #username
+  github: jiangxh1992
+  gitlab: albeeert
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   skype: #username
