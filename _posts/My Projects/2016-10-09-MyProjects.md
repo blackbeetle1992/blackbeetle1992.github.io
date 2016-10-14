@@ -22,20 +22,24 @@ icon:
 <a href="http://github.com/jiangxh1992/WorldFind" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ### **2.OpenGl Step by Step | OpenGl翻译教程工程源码**
+
 <a href="http://blog.csdn.net/column/details/13062.html">![这里写图片描述](http://img.blog.csdn.net/20161014165108020)<a/>
 
-> ***According to the series tutorials <OpenGL Step by Step>, I built a OpenGL Demo project for test, and also can use as a foundamental OpenGL project. Many popular plugins and libs are involved.<br/>
-<OpenGL Step by Step>系列教程下的OpenGLDemo个人VS2013测试工程，用于OpenGL的基础工程和测试工程，集成了常用的插件和库。个人翻译版本点积上图调到博客专栏***
+> ***According to the series tutorials 'OpenGL Step by Step', I built a OpenGL Demo project for test, and also can use as a foundamental OpenGL project. Many popular plugins and libs are involved.<br/>
+'OpenGL Step by Step'系列教程下的OpenGLDemo个人VS2013测试工程，用于OpenGL的基础工程和测试工程，集成了常用的插件和库。个人翻译版本点积上图调到博客专栏***
 
 <a href="http://github.com/jiangxh1992/SDKDemo" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ## ***UnderGraduate Projects | 本科阶段项目***
+
 ***
 
 ### **1.SpaceWar Game based on Cocos2d-x | Cocos2d-x机战游戏**
@@ -48,18 +52,20 @@ icon:
 <a href="http://github.com/jiangxh1992/SpaceWar" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ### **2.StickHero based on Unity3D | Unity开发的‘棍子英雄小游戏’**
 
 <a href="http://www.baidu.com">![这里写图片描述](http://img.blog.csdn.net/20161014164014171)<a/>
 
-> ***Develop the ever popular minigame <stickhero> with Unity2D, and implement the algorithm to play the game with romote controller on TV.<br/>
-开发实现曾经比较火的小游戏<棍子英雄>，并设计实现电视游戏移植算法，通过这个算法可以实现用遥控器上下左右键搜索换选按钮操作，将游戏移植到电视上。***
+> ***Develop the ever popular minigame 'stickhero' with Unity2D, and implement the algorithm to play the game with romote controller on TV.<br/>
+开发实现曾经比较火的小游戏'棍子英雄'，并设计实现电视游戏移植算法，通过这个算法可以实现用遥控器上下左右键搜索换选按钮操作，将游戏移植到电视上。***
 
 <a href="http://github.com/jiangxh1992/STICKHERO" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ### **3.IOS Development Demo | IOS 开发个人Demo**
@@ -72,6 +78,7 @@ icon:
 <a href="http://github.com/jiangxh1992/JXHDemo" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ### **4.GameLogin&Pay SDK | 游戏统一登录和支付SDK接口**
@@ -84,9 +91,11 @@ icon:
 <a href="http://github.com/jiangxh1992/SDKDemo" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 ## ***PostGradute Projects | 研究生阶段项目***
+
 ***
 
 ### **1.FourInaRowGame(Android) | 安卓四子棋小游戏**
@@ -99,6 +108,7 @@ icon:
 <a href="http://github.com/jiangxh1992/FourInRowGame" >![这里写图片描述](http://img.blog.csdn.net/20161014155020243)
 <br/>Github Source code
 <a/>
+
 ***
 
 
