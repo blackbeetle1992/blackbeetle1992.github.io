@@ -1,69 +1,117 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title: Jiangxh
-email: jxh1992@connect.hku.hk
-description: 
-url: # the base hostname & protocol for your site
+# Welcome to Jekyll!
 
+# Website settings
+title: "Jiangxh"
+description: "蒋信厚的独立博客"
+keywords: "蒋信厚,jiangxh,blog,Unity,Github,IOS,VR,AR"
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Europe/Paris
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+baseurl: "/"
+url: ""
+# url: "http://127.0.0.1:4000"
 
+# blog img path
+img_path: 'static/img/blog'
+
+# author
+author:
+  name: 'Jiangxh'
+  first_name: 'Xinhou'
+  last_name: 'Jiang'
+  email: 'jiangxinhou@outlook.com'
+  facebook_username: 'Jiang Xinhou'
+  github_username: 'jiangxh1992'
+  head_img: 'static/img/landing/me.jpg'
+
+# social link
+fenglele:
+  first_name: 'Lele'
+  last_name: 'Feng'
+  description: 'Computer Grapics'
+  link: 'http://candycat1992.github.io'
+  email: 'lelefeng@gmail.com'
+
+# landing page
+landing:
+  home: 'Home'
+  about: 'About'
+  career: 'Career'
+  skills: 'Skills'
+  projects: 'Project'
+  blog: 'Blog'
+  link: 'Link'
+
+# my projects
+project:
+  p1:
+    name: 'JXHDemo'
+    url: '/jiangxh1992/JXHDemo'
+    img: 'static/img/projects/p1.png'
+  p2:
+    name: 'SpaceWar'
+    url: '/jiangxh1992/SpaceWar'
+    img: 'static/img/projects/p2.png'
+  p3:
+    name: 'WorldFind'
+    url: '/jiangxh1992/WorldFind'
+    img: 'static/img/projects/p3.png'
+  p4:
+    name: 'STICKHERO'
+    url: '/jiangxh1992/STICKHERO'
+    img: 'static/img/projects/p4.png'
+  p5:
+    name: 'OpenGLDemo'
+    url: '/jiangxh1992/OpenGLDemo'
+    img: 'static/img/projects/p5.png'
+  p6:
+    name: 'SDKDemo'
+    url: '/jiangxh1992/SDKDemo'
+    img: 'static/img/projects/p6.png'
+  p7:
+    name: 'FourInRowGame'
+    url: '/jiangxh1992/FourInRowGame'
+    img: 'static/img/projects/p7.png'
+
+# blog index
+index:
+  one: 'New'
+  two: 'Unity3d'
+  three: 'IOS'
+  four: 'About Me'
+  five: 'Academic'
+  six: 'OpenGL'
+  seven: 'Life'
+
+# donate
+donate:
+  wechat: 'static/img/pay/wechat.png'
+  alipay: 'static/img/pay/alipay.png'
+
+# comment
+changyan:
+  # appid: cysfY7ULn
+  # conf: prod_861928934cecb7a18e15bedaed9dae29
+disqus:
+  name: jiangxh
+  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+
+# baidu analytics
+ba:
+  uuid: 317acca9ef9255b934e46371e471431d
+
+# google analytics
+ga:
+  id: UA-73784599-1
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: Jiangxh
-  avatar: avatar.png
-  job: "Game Developer"
-  bio: "A current student of The University of HongKong, major in computer science."
-  email: jxh1992@connect.hku.hk
-  disqus-shortname: Jiangxh
-  twitter: #username
-  facebook: Xinhou Jiang
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: jiangxh1992
-  gitlab: albeeert
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
+  input: GFM
+  syntax_highlighter: rouge

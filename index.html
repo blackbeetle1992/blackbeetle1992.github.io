@@ -1,4 +1,820 @@
 ---
-layout: post_listing
+layout: blog
+title: index
 permalink: /
 ---
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!--返回主页全局按钮-->
+                    <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+                        <li><a class="page-scroll" href="#page-top"><span data-i18n="nav.home">{{ site.landing.home }}</span></a></li>
+                        <li><a class="page-scroll" href="#about_me"><span data-i18n="nav.about_me">{{ site.landing.about }}</span></a></li>
+                        <li><a class="page-scroll" href="#career"><span data-i18n="nav.career">{{ site.landing.career }}</span></a></li>
+                        <li><a class="page-scroll" href="#skills"><span data-i18n="nav.skills">{{ site.landing.skills }}</span></a></li>
+                        <li><a class="page-scroll" href="#project"><span data-i18n="nav.projects">{{ site.landing.projects }}</span></a></li>
+                        <li><a class="page-scroll" href="#blog"><span data-i18n="nav.blog">{{ site.landing.blog }}</span></a></li>
+                        <li><a class="page-scroll" href="#link"><span data-i18n="nav.link">{{ site.landing.link }}</span></a></li>
+
+                        <!--国旗语言切换按钮-->
+                        <li>
+                            <a class="btn btn-sm set_en"><img src="{{"static/img/flags/United-States.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-sm set_cn"><img src="{{"static/img/flags/China.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<!--图片滚动切换组件-->
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <!--第一张图片（默认活跃）-->
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+
+        <!--第二张图片-->
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+
+
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--关于我-->
+<section id="about_me" class="features">
+    <div class="container" id="i18_about_me">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="about_me.about_me">About Me</span></h1>
+                <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
+            </div>
+        </div>
+
+        <!--图标背景-->
+        <div class="row">
+            <!-- python -->
+            <div class="col-xs-2 wow fadeInLeft">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-shell"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- linux -->
+            <div class="col-xs-2 wow fadeInLeft">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-shell"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 个人信息 -->
+            <div class="col-xs-4">
+                <div class="team-member wow zoomIn">
+                    <!--头像-->
+                    <img src="{{ site.author.head_img | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+
+                    <!--姓名-->
+                    <h4><span class="navy">{{ site.author.last_name }}</span> {{ site.author.first_name }}</h4>
+
+                    <!--社交账号-->
+                    <ul class="list-inline social-icon">
+                        <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="{{ site.url}}/feed.xml" target="blank"><i class="fa fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- html -->
+            <div class="col-xs-2 wow fadeInRight">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-shell"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- docker -->
+            <div class="col-xs-2 wow fadeInRight">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-shell"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--自我介绍-->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><span data-i18n="about_me.des">
+                    自我介绍
+                </span></p>
+                <br/>
+                <p><span data-i18n="about_me.hobby">
+                    爱好
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--
+ 时间轴
+-->
+<section id="career" class="timeline features gray-section">
+    <div class="container" id="i18_career">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="career.my_career">My Career</span></h1>
+            </div>
+        </div>
+        <div class="row features-block">
+
+            <div class="col-lg-12">
+                <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+
+                  <!-- 香港大学硕士 -->
+                  <div class="vertical-timeline-block">
+                      <div class="vertical-timeline-icon navy-bg">
+                          <i class="fa fa-book"></i>
+                      </div>
+                      <div class="vertical-timeline-content">
+                          <h2><span data-i18n="career.master">标题</span></h2>
+                          <p><span data-i18n="career.master_des">描述</span></p>
+                          <span class="vertical-date"><masterspan data-i18n="career.master_date">毕业时间</span><br/> <small><span data-i18n="career.master_job">学校工作</span></small> </span>
+                      </div>
+                  </div>
+
+                  <!-- 小西游戏 -->
+                  <div class="vertical-timeline-block">
+                      <div class="vertical-timeline-icon navy-bg">
+                          <i class="fa fa-gamepad"></i><!--图标-->
+                      </div>
+                      <div class="vertical-timeline-content">
+                          <h2><span data-i18n="career.XiaoXi"标题</span></h2>
+                          <p><span data-i18n="career.XiaoXi_des">描述</span></p>
+                          <span class="vertical-date"><span data-i18n="career.XiaoXi_date">时间</span><br/> <small><span data-i18n="career.XiaoXi_job">职位名称</span></small> </span>
+                      </div>
+                  </div>
+
+                  <!-- 天下布医 -->
+                  <div class="vertical-timeline-block">
+                      <div class="vertical-timeline-icon navy-bg">
+                          <i class="fa fa-cloud"></i><!--图标-->
+                      </div>
+                      <div class="vertical-timeline-content">
+                          <h2><span data-i18n="career.IOS"标题</span></h2>
+                          <p><span data-i18n="career.IOS_des">描述</span></p>
+                          <span class="vertical-date"><span data-i18n="career.IOS_date">时间</span><br/> <small><span data-i18n="career.IOS_job">职位名称</span></small> </span>
+                      </div>
+                  </div>
+
+                    <!-- 苏州迈科 -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-cloud"></i><!--图标-->
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.MEC"标题</span></h2>
+                            <p><span data-i18n="career.MEC_des">描述</span></p>
+                            <span class="vertical-date"><span data-i18n="career.MEC_date">时间</span><br/> <small><span data-i18n="career.MEC_job">职位名称</span></small> </span>
+                        </div>
+                    </div>
+
+                    <!-- 南京工业大学本科 -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.bachelor">标题</span></h2>
+                            <p><span data-i18n="career.bachelor_des">描述</span></p>
+                            <span class="vertical-date"><span data-i18n="career.bachelor_date">时间</span><br/> <small><span data-i18n="career.bachelor_job">学校工作</span></small> </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--
+技能列表
+-->
+<section id="skills" class="team features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="i18_skills">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="skills.my_skills">技能标题</span></h1>
+            </div>
+        </div>
+
+        <div class="row features-block">
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 features-text wow fadeInLeft">
+              <p>Unity</p>
+            </div>
+            <div class="col-lg-7 features-text wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">85% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>IOS</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 95%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">65% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>Android</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">65% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>OpenGL</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 75%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">65% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>HTML5</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>C++</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>ObjectiveC</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 85%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>C#</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 70%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>JavaScript</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 65%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>Java</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+
+        </div>
+    </div>
+</section>
+
+<!--
+项目列表
+-->
+<section id="project" class="project gray-section features">
+    <div class="container" id="i18_projects">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="projects.my_projects">我的项目标题</span></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="{{ site.project.p1.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p1.name }}</span></h4>
+                    <p><span data-i18n="projects.p1">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p1.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p1.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p1.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p1.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p1.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p1.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 wow">
+                <div class="team-member">
+                    <img src="{{ site.project.p2.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p2.name }}</span></h4>
+                    <p><span data-i18n="projects.p2">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p2.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p2.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p2.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p2.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p2.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p2.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 wow fadeInRight">
+                <div class="team-member">
+                    <img src="{{ site.project.p3.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p3.name }}</span></h4>
+                    <p><span data-i18n="projects.p3">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p3.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p3.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p3.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p3.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p3.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p3.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!--***********************************************************************************-->
+
+            <div class="col-sm-4 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="{{ site.project.p4.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p4.name }}</span></h4>
+                    <p><span data-i18n="projects.p4">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p4.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p4.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p4.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p4.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p4.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p4.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 wow">
+                <div class="team-member">
+                    <img src="{{ site.project.p5.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p5.name }}</span></h4>
+                    <p><span data-i18n="projects.p5">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p5.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p5.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p5.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p5.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p5.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p5.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 wow fadeInRight">
+                <div class="team-member">
+                    <img src="{{ site.project.p6.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p6.name }}</span></h4>
+                    <p><span data-i18n="projects.p6">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p6.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p6.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p6.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p6.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p6.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p6.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!--************************************************************************************-->
+
+            <div class="col-sm-4 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="{{ site.project.p7.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">{{ site.project.p7.name }}</span></h4>
+                    <p><span data-i18n="projects.p7">项目描述</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.p7.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.p4.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.p4.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.p7.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.p7.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.p7.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--************************************************************************************-->
+
+        </div>
+    </div>
+    <br>
+</section>
+
+
+<!--
+我的博客
+-->
+<section id="blog" class="navy-section testimonials" style="margin-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn" id="i18_blog">
+                <br><br><br>
+                <a class="btn btn-lg btn-default btn-rounded btn-outline" href="http://blog.csdn.net/cordova"><span>CSDN Blog</span></a>
+                <br><br><br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn" id="i18_blog">
+                <br><br><br>
+                <a class="btn btn-lg btn-default btn-rounded btn-outline" href="/blog/"><span data-i18n="blog.my_blog">Jiangxh Blog</span></a>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+友情链接
+-->
+<section id="link" class="contact features">
+    <div class="container" id="i18_link">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="link.link">Link</span></h1>
+            </div>
+        </div>
+
+        <!--Jiang CSDN-->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="team-member wow zoomIn">
+                    <h4><span class="navy">Jiang</span>Xinhou</h4>
+                    <p>
+                        My CSDN
+                    </p>
+                    <ul class="list-inline social-icon">
+                        <li><a href="http://blog.csdn.net/cordova" target="blank"><i class="fa fa-link"></i></a>
+                        </li>
+                        <li><a href="mailto:jiangxinhou@outlook.com"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--冯乐乐-->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="team-member wow zoomIn">
+                    <h4><span class="navy">{{ site.fenglele.last_name }}</span> {{ site.fenglele.first_name }}</h4>
+                    <p>
+                        {{ site.fenglele.description }}
+                    </p>
+                    <ul class="list-inline social-icon">
+                        <li><a href="{{ site.fenglele.link }}" target="blank"><i class="fa fa-link"></i></a>
+                        </li>
+                        <li><a href="mailto:{{ site.fenglele.email }}"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--©️Jiangxh-->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p id="p2_site_pv"><strong>&copy; 2016 {{ site.title }}</strong></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+    $(document).ready(function () {
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 80
+        });
+        // Page scrolling feature
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+</script>
+
+<script>
+
+    $(document).ready(function (){
+        $.i18n.init({
+            resGetPath: 'static/locales/__lng__.json',
+            load: 'unspecific',
+            fallbackLng: false,
+            lng: 'en'
+        }, function (t){
+            $('.i18container').i18n();
+            // $('#i18_title').i18n();
+            $('#i18_navbar').i18n();
+            $('#i18_about_me').i18n();
+            $('#i18_skills').i18n();
+            $('#i18_projects').i18n();
+            $('#i18_career').i18n();
+            $('#i18_blog').i18n();
+            $('#i18_link').i18n();
+        });
+        $('.set_en').on('click', function (){
+            i18n.setLng('en', function(){
+                $('.i18container').i18n();
+                // $('#i18_title').i18n();
+                $('#i18_navbar').i18n();
+                $('#i18_about_me').i18n();
+                $('#i18_skills').i18n();
+                $('#i18_projects').i18n();
+                $('#i18_career').i18n();
+                $('#i18_blog').i18n();
+                $('#i18_link').i18n();
+                // $('.set_en').addClass('active');
+                // $('.set_cn').removeClass('active');
+            });
+        });
+        $('.set_cn').on('click', function (){
+            i18n.setLng('cn', function(){
+                $('.i18container').i18n();
+                // $('#i18_title').i18n();
+                $('#i18_navbar').i18n();
+                $('#i18_about_me').i18n();
+                $('#i18_skills').i18n();
+                $('#i18_projects').i18n();
+                $('#i18_career').i18n();
+                $('#i18_blog').i18n();
+                $('#i18_link').i18n();
+                // $('.set_cn').addClass('active');
+                // $('.set_en').removeClass('active');
+            });
+        });
+    });
+</script>
+
+<script>
+// Goolgle Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83542329-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

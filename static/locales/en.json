@@ -1,0 +1,69 @@
+{
+  "website":{
+    "title": "Jiangxh's blog"
+  },
+  "nav":{
+    "home": "Home",
+    "about_me": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "career": "Career",
+    "blog": "Blog",
+    "link": "Link"
+  },
+  "about_me":{
+    "about_me": "About Me",
+    "des": "I'm a Game Development Lover, graduated from Nanjing Tech University, with bachelor degree of Computer Science and Technology. Now I'm studing in The University of HongKong to persue my master degree of Computer Science(Multimedia Stream) and will gradute in Dec. 2017",
+    "hobby": "HOBBIES: Swimming, Roller Skating, Cycling, Body-building"
+  },
+  "skills":{
+    "my_skills": "My Skills"
+  },
+  "projects":{
+    "my_projects": "My Projects",
+    "p1": "This is my IOS Demo, in this Demo, I made many tests and some demo's to show how to use UIKit and so on, plus, there are also some little functions and plugins developed by my self.",
+    "p2": "Design a new zero game with Cocos2d-x, using iPhone's multi - point touch screen to achieve the function of single user controlling several aircrafts and aiming at activate the thinking and innovative user experience.",
+    "p3": "AR Game development with Vuforia on Unity3d Game Engine. The first demo is to achieve the goal to recognize my Computer keyboard by the camera and renderring a 3d model on the keyboard and interact with players.",
+    "p4": "Develop the ever popular minigame <stickhero> with Unity2D, and implement the algorithm to play the game with romote controller on TV.",
+    "p5": "According to the series tutorials <OpenGL Step by Step>, I built a OpenGL Demo project for test, and also can use as a foundamental OpenGL project. Many popular plugins and libs are involved.",
+    "p6": "This is a typical SDK Demo, providing interface function for login,register,binding etc. and also used for payment by channels like AliPay,WeichatPay,ApplePay and so on.",
+    "p7": "Develop the FourInRow Game with Android foundamental API and adopt the game 'Plant and Zoombies' theme and characters."
+  },
+  "career":{
+    "my_career": "My Career",
+
+    "master": "Master Degree",
+    "master_des": "I'm studing in The University of HongKong to persue my master degree of Computer Science(Multimedia Stream)",
+    "master_date": "Now",
+    "master_job": "Student",
+
+    "XiaoXi": "Xiaoxi Tech.",
+    "XiaoXi_des": "Unity3d Game Development",
+    "XiaoXi_date": "Mar. 2016 - Aug. 2016",
+    "XiaoXi_job": "Game Development Engineer",
+
+    "IOS": "Tianxiabuyi",
+    "IOS_des": "IOS Software Development. The company aims to build integrated information systems for all the hospitals in Jiangsu province and the whole China in the future, to improve the efficiency of the hospital.",
+    "IOS_date": "Sep. 2015 - Jan. 2016",
+    "IOS_job": "IOS Software Engineer",
+
+    "MEC": "MEC",
+    "MEC_des": "Cross-platform software development based on HTML5, using some third-party framworks like PhoneGap(Cordova) and APICloud(China)",
+    "MEC_date": "Oct. 2014 - Sep. 2015",
+    "MEC_job": "Software Engineer",
+
+    "bachelor": "Bachelor Degree",
+    "bachelor_des": "Nanjing Tech University, Computer Science and Technology",
+    "bachelor_date": "Sep. 2012 - Jul. 2016",
+    "bachelor_job": "Student"
+
+  },
+  "blog":{
+    "my_blog": "My Blog"
+  },
+  "link":{
+    "link": "Link",
+    "view": "views"
+  }
+
+}
